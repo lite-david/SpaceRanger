@@ -2,4 +2,8 @@
 comment0.params=
 comment0.target=space()
 comment0.text=\n\ Constructor\ for\ objects\ of\ class\ space.\n\ \n
-numComments=1
+comment1.params=howMany
+comment1.target=void\ addStars(int)
+comment2.params=howMany
+comment2.target=void\ addRocks(int)
+numComments=3

@@ -14,7 +14,7 @@ public class rocket extends Animal
      */
     
     public rocket(){
-        turn(-90);
+       
     }
     
     
@@ -23,19 +23,34 @@ public class rocket extends Animal
     {
         // Add your acion code here.
        
-        if(Greenfoot.isKeyDown("left")){
+       
+        if(Greenfoot.isKeyDown("up"))
+        {
             
             turn(-90);
             move(10);
             turn(90);
         }
-        if(Greenfoot.isKeyDown("right")){
+        
+        if(Greenfoot.isKeyDown("down"))
+        {
             
-             turn(90);
+            turn(90);
             move(10);
             turn(-90);
            
         }
+        
+        if(Greenfoot.isKeyDown("left"))
+        {
+            move(-10);           
+        }
+       
+        if(Greenfoot.isKeyDown("right"))
+        {
+            move(10);           
+        }
+       
        
         
     }    

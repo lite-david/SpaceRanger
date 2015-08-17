@@ -1,4 +1,6 @@
 import greenfoot.*;
+import java.awt.*;
+
 
 /**
  * Write a description of class space here.
@@ -16,7 +18,35 @@ public class space extends World
     public space()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super( 1000, 800, 1); 
+        super( 800, 600, 1);
+        
+        GreenfootImage img = new GreenfootImage(800, 600);
+        img.fill();
+        setBackground(img);
+        
+        addStars(600);
+        addObject(new rocket(), 100, getHeight()/2);
+        addRocks(6);
        
+    }
+    
+    public void addStars(int howMany)
+    {
+        for(int s=0; s<howMany; s++)
+        {
+            int x = Greenfoot.getRandomNumber(getHeight());
+            int y = Greenfoot.getRandomNumber(getWidth());
+            addObject(new Star(),y,x);
+        }
+    }
+    
+    public void addRocks(int howMany)
+    {
+        for(int i = 0; i< howMany; i++ )
+        {
+            int x = Greenfoot.getRandomNumber(getHeight());
+            int y = Greenfoot.getRandomNumber(getWidth());
+            addObject(new rock(),y,x);
+        }
     }
 }
