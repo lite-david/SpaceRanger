@@ -15,6 +15,10 @@ public class space extends World
      * Constructor for objects of class space.
      * 
      */
+    
+    public static int rockSpeed;
+    public static int rockNumber = 0;
+    
     public space()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -26,7 +30,9 @@ public class space extends World
         
         addStars(600);
         addObject(new rocket(), 100, getHeight()/2);
-        addRocks(6);
+        addRocks(10);
+        rockSpeed = 5;
+        addObject(new controller(),1,1);
        
     }
     

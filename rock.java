@@ -13,9 +13,19 @@ public class rock extends Animal
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
+    private int speed;
+    private int number;
+    
+    public void setRockSpeed()
+    {
+        speed = space.rockSpeed;
+    }
+    
+    
     public void act() 
     {
-       move(-3);
+       setRockSpeed();
+       move(-(space.rockSpeed));
          if(canSee(rocket.class)){
             eat(rocket.class);
             //GreenfootImage("GAME OVER",20,"black","white");
@@ -26,7 +36,10 @@ public class rock extends Animal
         
         if(isAtEdge())
         {
-            getWorld().addObject(new rock(),1000,Greenfoot.getRandomNumber(600) + 200);
+           
+            space.rockNumber++;
+            getWorld().addObject(new rock(),1000,Greenfoot.getRandomNumber(800));
+   
             getWorld().removeObject(this);
         }
     }

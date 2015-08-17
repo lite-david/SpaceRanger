@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Mon Aug 17 15:18:41 IST 2015
+#Mon Aug 17 18:37:40 IST 2015
 target4.type=ClassTarget
 dependency3.from=space
 target3.height=50
@@ -74,6 +74,7 @@ target1.editor.height=700
 target4.editor.x=105
 target5.editor.height=700
 target2.name=Star
+simulation.speed=50
 package.numDependencies=3
 target4.naviview.expanded=true
 target3.editor.height=700
@@ -87,6 +88,7 @@ mainWindow.height=733
 target2.showInterface=false
 target3.name=Animal
 target1.editor.width=900
+class.controller.superclass=greenfoot.Actor
 class.Gameover.superclass=greenfoot.Actor
 target3.naviview.expanded=true
 project.charset=UTF-8
