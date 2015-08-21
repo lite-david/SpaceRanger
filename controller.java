@@ -16,22 +16,25 @@ public class controller extends Actor
   
     private int speed = 45;
     private int factor = 50;
+    Counter counter;
+    private int score;
     
-    public controller()
+    public controller(Counter cntr)
     {
         Greenfoot.setSpeed(speed);
+        counter = cntr;
     }
     
     public void act() 
     {
-        if(space.rockNumber % factor == 0)
+        score = counter.getValue();
+        if(score > 200)
         {
-            factor += 25;
-            speed++;
-            if(speed > 65){
-                speed = 65;
+            if(score % 200 == 0)
+            {
+                getWorld().addObject(new Shield(),800,Greenfoot.getRandomNumber(800));
             }
-            Greenfoot.setSpeed(speed);
+            
         }
     }    
 }

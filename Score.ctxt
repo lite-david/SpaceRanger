@@ -1,6 +1,6 @@
 #BlueJ class context
-comment0.params=cntr
-comment0.target=controller(Counter)
+comment0.params=ctr
+comment0.target=Score(Counter)
 comment1.params=
 comment1.target=void\ act()
 numComments=2
