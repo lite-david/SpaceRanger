@@ -1,8 +1,12 @@
 #BlueJ class context
 comment0.params=
-comment0.target=void\ setRockSpeed()
+comment0.target=void\ act()
 comment1.params=
-comment1.target=void\ act()
+comment1.target=void\ moveAround()
 comment2.params=
-comment2.target=void\ moveAround()
-numComments=3
+comment2.target=void\ setRockSpeed()
+comment3.params=
+comment3.target=void\ destroyRocket()
+comment4.params=
+comment4.target=void\ destruct()
+numComments=5
