@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Fri Aug 21 20:35:52 IST 2015
+#Sat Aug 22 01:53:19 IST 2015
 target10.editor.width=900
 target2.width=80
 target8.name=rock
@@ -58,8 +58,8 @@ target10.editor.y=70
 target9.name=controller
 target10.editor.x=243
 target5.height=50
-class.Shield.image=shield.png
 class.Gameover.superclass=greenfoot.Actor
+class.Shield.image=shield.png
 target8.naviview.expanded=true
 target10.name=space
 target7.editor.width=900
@@ -75,8 +75,8 @@ class.rock.image=rock.png
 target9.typeParameters=
 dependency7.type=UsesDependency
 target1.naviview.expanded=true
-class.halo.image=Untitled.png
 target11.type=ClassTarget
+class.halo.image=Untitled.png
 target10.editor.height=700
 version=2.7.1
 target5.editor.width=900

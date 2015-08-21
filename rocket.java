@@ -8,11 +8,6 @@ import greenfoot.*;
  */
 public class rocket extends Animal
 {
-    /**
-     * Act - do whatever the rocket wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-   
     private Counter count;
     
     public rocket(Counter ctr)
@@ -20,13 +15,15 @@ public class rocket extends Animal
         count = ctr;
     }
     
-    
-    
     public void act() 
     {
-        // Add your acion code here.
-       
-       
+        moveAround();
+        fireLaser();
+        shieldUp();
+    }  
+    
+    public void moveAround()
+    {
         if(Greenfoot.isKeyDown("up"))
         {
             
@@ -53,18 +50,22 @@ public class rocket extends Animal
         {
             move(10);           
         }
-       
+    }
+    
+    public void fireLaser()
+    {
         if(Greenfoot.isKeyDown("space"))
         {
             getWorld().addObject(new laser(count),getX(),getY());
         }
-        
+    }
+    
+    public void shieldUp()
+    {
         if(canSee(Shield.class))
         {
             eat(Shield.class);
             getWorld().addObject(new halo(this),getX(),getY());
-        }
-       
-        
-    }    
+        }  
+    }
 }
